@@ -2,7 +2,7 @@
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := C5155
+PRODUCT_RELEASE_NAME := C515x
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
@@ -13,11 +13,11 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 DEVICE_RESOLUTION := 320x480
 
 # Inherit device configuration
-$(call inherit-product, device/kyocera/C5155/device_C5155.mk)
+$(call inherit-product, device/kyocera/C5155/device_C515x.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := C5155
-PRODUCT_NAME := cm_C5155
+PRODUCT_DEVICE := C515x
+PRODUCT_NAME := cm_C515x
 PRODUCT_BRAND := kyocera
-PRODUCT_MODEL := C5155
+PRODUCT_MODEL := C515x
 PRODUCT_MANUFACTURER := kyocera

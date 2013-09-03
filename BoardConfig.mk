@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/kyocera/C5155/BoardConfigVendor.mk
+-include vendor/kyocera/C515x/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -11,7 +11,7 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
-TARGET_BOOTLOADER_BOARD_NAME := C5155
+TARGET_BOOTLOADER_BOARD_NAME := C515x
 
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=ttyDCC0 androidboot.hardware=qcom
 BOARD_KERNEL_BASE := 0x00200000
@@ -24,14 +24,14 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_PREBUILT_KERNEL := device/kyocera/C5155/kernel
+TARGET_PREBUILT_KERNEL := device/kyocera/C515x/kernel
 TARGET_KERNEL_CONFIG := c5155_extracted_defconfig
-TARGET_KERNEL_SOURCE := kernel/kyocera/c5155
+TARGET_KERNEL_SOURCE := kernel/kyocera/c515x
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # For AndroidKernel.mk to chose the right defconfigs
-FILTER_PRODUCT_DEVICE := TARGET_PRODUCT_C5155
+FILTER_PRODUCT_DEVICE := TARGET_PRODUCT_C515x
 
 #TERP STUFF
 DEVICE_RESOLUTION := 320x480
